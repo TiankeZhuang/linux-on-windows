@@ -5,10 +5,6 @@ installing the Anaconda Python distribution, as well as accessing common Python 
 
 ## Install WSL
 
-Before installing any Linux distributions on Windows, enable the "Windows Subsystem for Linux" feature:
+1. Before installing any Linux distributions on Windows, enable the "Windows Subsystem for Linux" feature. Open PowerShell as Administrator (right click on the Powershell icon and select "Run as Administrator") and run: ```dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart``` to installs WSL 1. 
 
-Open PowerShell as Administrator (Right click on the Powershell icon and select "Run as Administrator") and run:
-
-```dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart```
-
-to installs WSL 1. Restart your machine and install your Linux distribution of choice in the Microsoft Store
+2. Restart your machine and install your Linux distribution of choice in the Microsoft Store
