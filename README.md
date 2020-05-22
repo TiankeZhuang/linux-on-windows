@@ -75,4 +75,48 @@ installing the Anaconda Python distribution, as well as accessing common Python 
 
 ## Install Anaconda
 
-1. 
+1. You can download the Anaconda installer anywhere you want but I was recommended the "tmp" folder. You can find it by moving up a few levels of directory using ```$ cd ..```. Us ```$ ls``` to check that you have found "tmp" and use ```$ cd tmp``` to relocate yourself there.
+
+2. Go to the Anaconda website to copy the installer link and run:
+
+	```$ curl https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh --output anaconda.sh```
+	
+	changing the web address to the one you found (more up-to-date).
+	
+3. You can verify the integrity of the installer by running:
+
+	```$ sha256sum anaconda.sh```
+	
+	to receive an output in the form:
+	
+	```$ 2b9f088b2022edb474915d9f69a803d6449d5fdb4c303041f60ac4aefcc208bb  anaconda.sh```
+	
+	Check your output with [this page](https://docs.anaconda.com/anaconda/install/hashes/lin-3-64/).
+	
+4. Now run the script:
+
+	```$ bash anaconda.sh```
+	
+	and follow the installation prompts.
+
+5. After the installation completes, activate the installation by sourcing the ```~/.bashrc``` file:
+	
+	```$ source ~/.bashrc```
+	
+	You will now see a ```(base)``` before your username.
+
+6. You can add environments following [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
+
+## Accessing Jupyter Lab
+
+1. Install Jupyter Lab by running:
+
+	```$ conda install -c conda-forge jupyterlab```
+	
+2. Run 
+
+	```$ jupyter lab --no-browser```
+
+3. Copy the url generated to your browser and voila!
+
+4. Close the session by clicking ```Ctrl+C``` twice.
